@@ -1,0 +1,22 @@
+<html>
+<head>
+	<h1>
+		NYU Tandon Airline Database System
+	</h1>
+</head>
+<body>
+	<form action="/registerAgentAuth" method="POST">
+		Login info:</br>
+		<input type="text" name="email" placeholder="Email address" maxlength="50" required /></br>
+		<input type="password" name="password" placeholder="Password" required /></br></br>
+		<input type="submit" value=Register />
+		{% if error %}
+		<p class="error"><strong>Error:</strong> {{error}}</p>
+		{% endif %}
+	</form>
+
+	<a href="/">Go back</a>
+
+</body>
+
+</html>
